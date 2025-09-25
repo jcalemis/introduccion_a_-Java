@@ -1,0 +1,27 @@
+package empleado;
+
+public class Tp4 {
+      public static void main(String[] args) {
+        // empleados 
+        Empleado e1 = new Empleado(10, "Cledia Oviedo", "AuxFacturacion", 1000.0);
+        Empleado e2 = new Empleado(10, "Enzo Garcia", "Facturista", 1500.0);
+        Empleado e3 = new Empleado(10, "Claudio Espindola", "Tesorero", 1800.0);
+        Empleado e4 = new Empleado(11, "Juan Benitez", "Líder", 2500.0);
+
+        //  actualizarSalario
+        e1.actualizarSalario(0.10);    // +10% de aumento
+        e2.actualizarSalario(200);     // aumento fijo de 200
+        e3.actualizarSalario(0.05);    // +5% de aumento
+        e4.actualizarSalario(300);     // aumento fijo de 300
+
+        // información de cada empleado
+        System.out.println(e1.toString());
+        System.out.println(e2.toString());
+        System.out.println(e3.toString());
+        System.out.println(e4.toString());
+
+        // Mostramos total de empleados creados
+        System.out.println("Total de empleados creados: " + Empleado.getTotalEmpleados());
+    }
+
+}
