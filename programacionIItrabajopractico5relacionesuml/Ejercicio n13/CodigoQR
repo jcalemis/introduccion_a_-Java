@@ -1,0 +1,20 @@
+
+package tp5;
+
+
+public class CodigoQR {
+    private String valor;
+    
+
+    public CodigoQR(String valor) { 
+        this.valor = valor;
+    }
+
+    public String getValor() { return valor; }
+    public void setValor(String valor) { this.valor = valor; }
+
+    @Override
+    public String toString() {
+        return "CodigoQR{valor='" + valor + "'}";
+    }
+}
