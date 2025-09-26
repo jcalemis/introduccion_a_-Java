@@ -1,0 +1,19 @@
+
+package tp5;
+
+
+public class GeneradorQR {
+   
+    public void generar(String valor, Usuario usuario) {
+       
+        CodigoQR codigoQR = new CodigoQR(valor);
+
+        System.out.println("Codigo QE Generado");
+        System.out.println("Valor: " + codigoQR.getValor());
+        System.out.println("Para usuario: " + usuario.getNombre());
+        System.out.println("Email: " + usuario.getEmail());
+        System.out.println("Código QR creado: " + codigoQR);
+
+       
+    }
+}
