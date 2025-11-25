@@ -1,0 +1,7 @@
+
+package Ejercicio;
+
+
+public interface Notificable {
+    void notificar(String mensaje);
+}
